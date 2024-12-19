@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ES">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KetoDiet Store</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(to right, #72c2a8, #4a9466);
+            color: rgb(5, 71, 8);
+            padding: 20px 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 2rem;
+        }
+
+        header nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        header nav a {
+            text-decoration: none;
+            color: rgb(5, 81, 6);
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        header nav a:hover {
+            color: #ffe66d;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 50px 10%;
+            background-image: url('https://example.com/keto-hero.jpg');
+            background-size: cover;
+            background-position: center;
+            color: rgb(3, 137, 64);
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+        }
+
+        .hero p {
+            margin: 20px 0;
+            font-size: 1.2rem;
+        }
+
+        .hero button {
+            background-color: #ffe66d;
+            color: #4a9466;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .hero button:hover {
+            background-color: #ffdb58;
+        }
+
+        .products {
+            padding: 50px 10%;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 300px;
+            transition: transform 0.3s;
+        }
+
+        .product-card:hover {
+            transform: scale(1.05);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .product-card h3 {
+            padding: 20px;
+            font-size: 1.5rem;
+            color: #4a9466;
+        }
+
+        .product-card p {
+            padding: 0 20px 20px;
+            font-size: 1rem;
+            color: #555;
+        }
+
+        .product-card button {
+            background-color: #4a9466;
+            color: white;
+            padding: 10px;
+            width: 100%;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+            border-radius: 0 0 10px 10px;
+            transition: background-color 0.3s;
+        }
+
+        .product-card button:hover {
+            background-color: #72c2a8;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 10%;
+        }
+
+        footer p {
+            margin: 10px 0;
+        }
+
+        footer a {
+            color: #72c2a8;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>KetoDiet Store</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Products</a>
+            <a href="#">About Us</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Your Gateway to Keto-Friendly Goodness</h2>
+        <p>Discover delicious, low-carb meals and snacks tailored to your keto lifestyle.</p>
+        <p>by cupcake </p>
+        <button>Shop Now</button>
+    </section>
+
+    <section class="products">
+        <div class="product-card">
+            <img src="keto 1.jpeg" alt="Keto Snack">
+            <h3>Keto Snack Box</h3>
+            <p>A selection of the best keto-friendly snacks to keep you on track.</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="keto 2.jpeg" alt="Keto Meal">
+            <h3>Keto Meal Plan</h3>
+            <p>Weekly meal plans with pre-made keto dishes for your convenience.</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="keto 3.jpeg" alt="Keto Dessert">
+            <h3>Keto Desserts</h3>
+            <p>Indulge in guilt-free keto desserts that satisfy your sweet tooth.</p>
+            <button>Add to Cart</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 KetoDiet Store. All Rights Reserved.</p>
+        <p>Follow us on <a href="#">Instagram</a>, <a href="#">Facebook</a>, and <a href="#">Twitter</a>.</p>
+    </footer>
+</body>
+</html>
